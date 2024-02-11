@@ -28,12 +28,13 @@ Or you can install it for all of the users on the computer by executing the foll
 ````
 Install-Module -Name vOperator -Scope AllUsers -AllowPrerelease -Force
 ````
-
+## How to update vOperator
 If you already have vOperator installed you can check if it need to be updated by executing the following command:  
 ````
 # For all users on the computer
 Update-Module -Name vOperator -Scope AllUsers -AllowPrerelease -Force
-
+````
+````
 # Only for the user that are running PowerShell
 Update-Module -Name vOperator -Scope CurrentUser -AllowPrerelease -Force
 ````
