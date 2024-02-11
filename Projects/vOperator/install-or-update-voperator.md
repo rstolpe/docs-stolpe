@@ -2,7 +2,7 @@
 
 title: Install or update vOperator
 menu_order: 1
-post_status: draft
+post_status: publish
 comment_status: closed
 taxonomy:
     category:
