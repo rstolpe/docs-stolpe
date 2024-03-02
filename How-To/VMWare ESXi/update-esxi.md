@@ -24,7 +24,7 @@ Now when we have downloaded latest ESXi let's get started.
 I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose your path.
 
 ## WebGUI
-1. Put the host in to maintenance mode
+1. First we need to put the host in maintenance mode.
   1. Click on "Host" in the left menu
   2. Then "Actions" to the right and a dropdown list will appear
   3. Click on "Enter maintenance mode"
