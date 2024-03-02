@@ -22,10 +22,18 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 ![01](/_images/how-to/vmware-esxi/update-esxi/01_update_esxi.png)  
 Now when we have downloaded latest ESXi let's get started.
   
-I have made this guide for both WebGUI and SSH, just choose your path.
+I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose your path.
 
 ## WebGUI
 1. Logg in to ESXi and put it in to maintenance mode.
+  1. Click on "Host" in the left menu.
+  2. Then "Actions" to the right and a dropdown list will appear.
+  3. Click on "Enter maintenance mode"
+  ![01](/_images/how-to/vmware-esxi/update-esxi/01_update_esxi_webgui.png)
+  4. Then just confirm that you want to put the host in to maintenance mode.
+  ![02](/_images/how-to/vmware-esxi/update-esxi/02_update_esxi_webgui.png)
+
+
 
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it.
@@ -35,3 +43,4 @@ I have made this guide for both WebGUI and SSH, just choose your path.
 esxcli system maintenanceMode set -e true
 </pre>
 <!-- /wp:enlighter/codeblock -->
+3. Verify that it's in maintenance mode.
