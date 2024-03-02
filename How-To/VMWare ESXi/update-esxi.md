@@ -35,13 +35,14 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <figure class="wp-block-image size-full"><img class="wp-image-299" src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui.png" alt="03" width="527" height="163" /></figure>
 2. We also need to upload the VMWare ESXi offline bundle file that we did download earlier.
   1. In the left menu click on "Storage" **->** "datastore1" _(your datastore might be named different)_ **->** "Datastore browser"
-  ![04](/_images/how-to/vmware-esxi/update-esxi/04_update_esxi_webgui.png)
+  <figure class="wp-block-image size-full"><img class="wp-image-301" src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi_webgui.png" alt="04" width="454" height="286" /></figure>
   2. Click on "Upload file" and then select VMWare ESXi offline bundle file that we did download earlier to upload it. If you look at the left side of the window you will see a progress bar.
-  ![05](/_images/how-to/vmware-esxi/update-esxi/05_update_esxi_webgui.png)
-  ![06](/_images/how-to/vmware-esxi/update-esxi/06_update_esxi_webgui.png)
+  <figure class="wp-block-image size-full"><img class="wp-image-302" src="https://stolpe.io/wp-content/uploads/2024/03/05_update_esxi_webgui.png" alt="05" width="694" height="286" /></figure>  
+    
+  <figure class="wp-block-image size-full"><img class="wp-image-303" src="https://stolpe.io/wp-content/uploads/2024/03/06_update_esxi_webgui.png" alt="06" width="698" height="50" /></figure>
 3. As far as I know the last steps we need to do with SSH, but that's easy. So first we need to enable SSH on the host.
   1. Click on Host in the left menu **->** "Actions" at the right **->** Services **->** Enable Secure Shell SSH
-  ![07](/_images/how-to/vmware-esxi/update-esxi/00_update_esxi_webgui.png)
+  <figure class="wp-block-image size-full"><img class="wp-image-300" src="https://stolpe.io/wp-content/uploads/2024/03/00_update_esxi_webgui.png" alt="07" width="719" height="304" /></figure>
 4. Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 ## SSH
