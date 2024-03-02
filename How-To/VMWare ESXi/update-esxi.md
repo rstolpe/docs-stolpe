@@ -42,7 +42,7 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
 3. As far as I know the last steps we need to do with SSH, but that's easy. So first we need to enable SSH on the host.
   1. Click on Host in the left menu **->** "Actions" at the right **->** Services **->** Enable Secure Shell SSH
   ![07](/_images/how-to/vmware-esxi/update-esxi/00_update_esxi_webgui.png)
-4. Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty]()
+4. Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it, you can read how in step 3 at the WebGUI section.
