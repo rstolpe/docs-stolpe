@@ -32,7 +32,7 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   4. Then just confirm that you want to put the host in to maintenance mode
   <figure class="wp-block-image size-full"><img class="wp-image-294" src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui.png" alt="02" width="524" height="264" /></figure>
   5. You can now see that the host is in maintenance mode
-  ![03](/_images/how-to/vmware-esxi/update-esxi/03_update_esxi_webgui.png)
+  <figure class="wp-block-image size-full"><img class="wp-image-299" src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui.png" alt="03" width="527" height="163" /></figure>
 
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it
