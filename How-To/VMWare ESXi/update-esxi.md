@@ -3,7 +3,7 @@
 title: Update VMWare ESXi
 menu_order: 1
 post_status: draft
-comment_status: open
+comment_status: closed
 taxonomy:
     category:
         - vmware-esxi-how-to
