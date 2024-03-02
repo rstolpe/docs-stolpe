@@ -57,7 +57,7 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip --profile=ESXi-8.0U2b-23305546-standard
   </pre>
   <!-- /wp:enlighter/codeblock -->
-![02](/_images/how-to/vmware-esxi/update-esxi/03_update_esxi.png)
+  ![02](/_images/how-to/vmware-esxi/update-esxi/03_update_esxi.png)
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it, you can read how in step 3 at the WebGUI section.
 2. Now we need to put the host in maintenance mode and we can do so with the following command
