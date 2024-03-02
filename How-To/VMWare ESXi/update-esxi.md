@@ -49,7 +49,10 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip
   </pre>
   <!-- /wp:enlighter/codeblock -->
-  <figure class="wp-block-image size-full"><img class="wp-image-304" src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi.png" alt="01" width="758" height="93" /></figure>
+
+  <!-- wp:image {"lightbox":{"enabled":true},"id":304,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full"><img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi.png" alt="" class="wp-image-304"/></figure>
+  <!-- /wp:image -->
 6. What we want is the update with both patch and security updates so we will go for "ESXi-8.0U2b-23305546-standard".
 7. Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=  
   <!-- wp:enlighter/codeblock {"language":"powershell"} -->
