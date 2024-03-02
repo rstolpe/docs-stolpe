@@ -39,13 +39,13 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   2. Click on "Upload file" and then select VMWare ESXi offline bundle file that we did download earlier to upload it. If you look at the left side of the window you will see a progress bar.
   <figure class="wp-block-image size-full"><img class="wp-image-302" src="https://stolpe.io/wp-content/uploads/2024/03/05_update_esxi_webgui.png" alt="05" width="704" height="290" /></figure>  
     
-  <figure class="wp-block-image size-full"><img class="wp-image-303" src="https://stolpe.io/wp-content/uploads/2024/03/06_update_esxi_webgui.png" alt="06" width="698" height="50" /></figure>
+    <figure class="wp-block-image size-full"><img class="wp-image-303" src="https://stolpe.io/wp-content/uploads/2024/03/06_update_esxi_webgui.png" alt="06" width="698" height="50" /></figure>
 3. As far as I know the last steps we need to do with SSH, but that's easy. So first we need to enable SSH on the host.
   1. Click on Host in the left menu **->** "Actions" at the right **->** Services **->** Enable Secure Shell SSH
   <figure class="wp-block-image size-full"><img class="wp-image-300" src="https://stolpe.io/wp-content/uploads/2024/03/00_update_esxi_webgui.png" alt="07" width="686" height="290" /></figure>
 4. Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 (Insert picture)
-5. Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after --depot= to your own path.
+5. Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after --depot= to your own path.  
   <!-- wp:enlighter/codeblock {"language":"powershell"} -->
   <pre class="EnlighterJSRAW" data-enlighter-language="powershell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
   esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip
@@ -53,7 +53,7 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <!-- /wp:enlighter/codeblock -->
   ![01](/_images/how-to/vmware-esxi/update-esxi/02_update_esxi.png)
 6. What we want is the update with both patch and security updates so we will go for "ESXi-8.0U2b-23305546-standard".
-7. Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=
+7. Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=  
   <!-- wp:enlighter/codeblock {"language":"powershell"} -->
   <pre class="EnlighterJSRAW" data-enlighter-language="powershell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
   esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip --profile=ESXi-8.0U2b-23305546-standard
