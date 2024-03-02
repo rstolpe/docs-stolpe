@@ -35,6 +35,10 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <figure class="wp-block-image size-full"><img class="wp-image-299" src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui.png" alt="03" width="527" height="163" /></figure>
   6. We also need to upload the VMWare ESXi offline bundle file that we did download earlier.
     1. In the left menu click on "Storage" **->** "datastore1" _(your datastore might be named different)_ **->** "Datastore browser"
+    ![04](/_images/how-to/vmware-esxi/update-esxi/04_update_esxi_webgui.png)
+    2. Click on "Upload file" and then select VMWare ESXi offline bundle file that we did download earlier to upload it. If you look at the left side of the window you will see a progress bar.
+    ![05](/_images/how-to/vmware-esxi/update-esxi/05_update_esxi_webgui.png)
+    ![06](/_images/how-to/vmware-esxi/update-esxi/06_update_esxi_webgui.png)
 
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it
