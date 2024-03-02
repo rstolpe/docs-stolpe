@@ -16,7 +16,7 @@ taxonomy:
 ---
 
 # Update VMWare ESXi  
-VMware vSphere 8.0 U2b is released and if your running it with just one host you can't upgrade it through vSphere. But you can do it with SSH or CLI and I'll walk you trough it.
+If your running VMWare ESXi on a singel host you can't update trough vSphere so you need to do it by your self. Below I'll go trough how to do it both with SSH and WebGUI.
   
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from [here](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).  
 <figure class="wp-block-image size-full"><img class="wp-image-282" src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi.png" alt="01" width="415" height="115" /></figure> 
