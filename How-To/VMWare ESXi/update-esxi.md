@@ -6,7 +6,7 @@ post_status: draft
 comment_status: open
 taxonomy:
     category:
-        - VMWare ESXi
+        - vmware-esxi-how-to
 
     post_tag:
         - ESXi
@@ -19,4 +19,4 @@ VMware vSphere 8.0 U2b is released and if your running it with just one host you
   
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from [here](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).  
 
-![tt](/_images/how-to/vmware-esxi/update-esxi/update_esxi/01_update_esxi.png)
+![tt](/_images/how-to/vmware-esxi/update-esxi/01_update_esxi.png)
