@@ -37,9 +37,9 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it
 2. Now we need to put the host in maintenance mode and we can do so with the following command
-<!-- wp:enlighter/codeblock {"language":"powershell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="powershell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
-esxcli system maintenanceMode set -e true
-</pre>
-<!-- /wp:enlighter/codeblock -->
+  <!-- wp:enlighter/codeblock {"language":"powershell"} -->
+  <pre class="EnlighterJSRAW" data-enlighter-language="powershell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+  esxcli system maintenanceMode set -e true
+  </pre>
+  <!-- /wp:enlighter/codeblock -->
 3. Verify that it's in maintenance mode
