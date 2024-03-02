@@ -33,6 +33,8 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <figure class="wp-block-image size-full"><img class="wp-image-294" src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui.png" alt="02" width="524" height="264" /></figure>
   5. You can now see that the host is in maintenance mode
   <figure class="wp-block-image size-full"><img class="wp-image-299" src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui.png" alt="03" width="527" height="163" /></figure>
+  6. We also need to upload the VMWare ESXi offline bundle file that we did download earlier.
+    1. In the left menu click on "Storage" **->** "datastore1" _(your datastore might be named different)_ **->** "Datastore browser"
 
 ## SSH
 1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it
