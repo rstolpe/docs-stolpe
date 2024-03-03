@@ -26,7 +26,6 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 </figure>
 <!-- /wp:image -->
 Now when we have downloaded latest ESXi let's get started.  
-I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose your path.
 
 1. Connect to your ESXi host with SSH
 2. Now we need to put the host in maintenance mode and we can do that with the following command
