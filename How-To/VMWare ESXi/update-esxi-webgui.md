@@ -101,13 +101,29 @@ Now when we have downloaded latest ESXi let's get started.
 8. If you did get in to any errors you can fix it by following this steps, if not go to step 9
   1. First we will try to activate cache on our host
   2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
-    
+    ![07](/_images/how-to/vmware-esxi/update-esxi/07_update_esxi_webgui.png)
+
   3. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
+    ![08](/_images/how-to/vmware-esxi/update-esxi/08_update_esxi_webgui.png)
     
   4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
-  5. fff
-  6. fff
-  7. Now when do step 5 to 7 again and everything should work
+    1. Now we will delete all files and folders in /tmp
+      <!-- wp:enlighter/codeblock {"language":"shell"} -->
+      <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+      rm -rf /tmp/*
+      </pre>
+      <!-- /wp:enlighter/codeblock -->
+    2. You can verify that the /tmp folder is empty by executing the following commands
+      <!-- wp:enlighter/codeblock {"language":"shell"} -->
+      <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+      # Change to the /tmp folder
+      cd /tmp
+
+      # Display all content inside the /tmp folder
+      ls
+      </pre>
+      <!-- /wp:enlighter/codeblock -->
+    3. Now when do step 5 to 7 again and everything should work
 9. If you don't get in to any errors after you have run the update command it should look something like this
 
 10. As you can see now we need to reboot the host, we can do that by typing following command
