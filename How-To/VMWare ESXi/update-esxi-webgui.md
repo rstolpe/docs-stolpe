@@ -101,8 +101,10 @@ Now when we have downloaded latest ESXi let's get started.
 8. If you did get in to any errors you can fix it by following this steps, if not go to step 9
   1. First we will try to activate cache on our host
   2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
-    
+    ![07](/_images/how-to/vmware-esxi/update-esxi/07_update_esxi_webgui.png)
+
   3. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
+    ![08](/_images/how-to/vmware-esxi/update-esxi/08_update_esxi_webgui.png)
     
   4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
   5. fff
