@@ -107,9 +107,13 @@ Now when we have downloaded latest ESXi let's get started.
     ![08](/_images/how-to/vmware-esxi/update-esxi/08_update_esxi_webgui.png)
     
   4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
-  5. fff
-  6. fff
-  7. Now when do step 5 to 7 again and everything should work
+    1. Now we will delete all files and folders in /tmp
+      <!-- wp:enlighter/codeblock {"language":"shell"} -->
+      <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+      rm -rf /tmp/*
+      </pre>
+      <!-- /wp:enlighter/codeblock -->
+    2. Now when do step 5 to 7 again and everything should work
 9. If you don't get in to any errors after you have run the update command it should look something like this
 
 10. As you can see now we need to reboot the host, we can do that by typing following command
