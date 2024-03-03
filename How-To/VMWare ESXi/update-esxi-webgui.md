@@ -123,7 +123,7 @@ Now when we have downloaded latest ESXi let's get started.
       ls
       </pre>
       <!-- /wp:enlighter/codeblock -->
-    3. Now when do step 5 to 7 again and everything should work
+    3. Now do step 5 to 7 again and everything should work
 9. If you don't get in to any errors after you have run the update command it should look something like this
 
 10. As you can see now we need to reboot the host, we can do that by typing following command
