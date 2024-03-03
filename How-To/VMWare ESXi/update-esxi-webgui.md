@@ -1,6 +1,6 @@
 ---
 
-title: Update VMWare ESXi
+title: Update VMWare ESXi on singel host (WebGUI)
 menu_order: 1
 post_status: draft
 comment_status: open
@@ -15,8 +15,9 @@ taxonomy:
         - VMWare
 ---
 
-# Update VMWare ESXi  
-If your running VMWare ESXi on a singel host you can't update trough vSphere so you need to do it by your self. Below I'll go trough how to do it both with SSH and WebGUI.
+# Update VMWare ESXi on singel host (WebGUI)
+If your running VMWare ESXi on a singel host you can't update trough vSphere so you need to do it by your self. Below I'll go trough how you update VMWare
+ESXi with the WebGUI.
   
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from [here](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"full","linkDestination":"none"} -->
@@ -25,9 +26,7 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 </figure>
 <!-- /wp:image -->
 Now when we have downloaded latest ESXi let's get started.  
-I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose your path.
 
-## WebGUI
 1. First we need to put the host in maintenance mode.
   1. Click **Host** in the left menu **->** **Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
   <!-- wp:image {"lightbox":{"enabled":true},"id":293,"sizeSlug":"full","linkDestination":"none"} -->
@@ -86,7 +85,7 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi.png" alt="" class="wp-image-304" />
   </figure>
   <!-- /wp:image -->
-6. What we want is the update with both patch and security updates so we will go for **ESXi-8.0U2b-23305546-standard**
+6. What we want is the update with both patch and security updates so we will choose **ESXi-8.0U2b-23305546-standard**
 7. Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=  
   <!-- wp:enlighter/codeblock {"language":"shell"} -->
   <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -99,12 +98,18 @@ I have made this guide for both WebGUI _(almost all steps)_ and SSH, just choose
   <img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi.png" alt="" class="wp-image-305" />
   </figure>
   <!-- /wp:image -->
-## SSH
-1. Connect to your ESXi host with SSH, if it's not enabled you need to enable it, you can read how in step 3 at the WebGUI section.
-2. Now we need to put the host in maintenance mode and we can do that with the following command
-  <!-- wp:enlighter/codeblock {"language":"shell"} -->
-  <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
-  esxcli system maintenanceMode set -e true
-  </pre>
-  <!-- /wp:enlighter/codeblock -->
-3. Verify that it's in maintenance mode
+8. If you did get in to any errors you can fix it by following this steps, if not go to step 9
+  1. First we will try to activate cache on our host
+  2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
+    
+  3. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
+    
+  4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
+  5. fff
+  6. fff
+  7. Now when do step 5 to 7 again and everything should work
+9. If you don't get in to any errors after you have run the update command it should look something like this
+
+10. As you can see now we need to reboot the host, we can do that by typing following command
+    
+11. Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode
