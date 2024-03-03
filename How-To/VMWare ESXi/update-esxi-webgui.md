@@ -113,7 +113,17 @@ Now when we have downloaded latest ESXi let's get started.
       rm -rf /tmp/*
       </pre>
       <!-- /wp:enlighter/codeblock -->
-    2. Now when do step 5 to 7 again and everything should work
+    2. You can verify that the /tmp folder is empty by executing the following commands
+      <!-- wp:enlighter/codeblock {"language":"shell"} -->
+      <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+      # Change to the /tmp folder
+      cd /tmp
+
+      # Display all content inside the /tmp folder
+      ls
+      </pre>
+      <!-- /wp:enlighter/codeblock -->
+    3. Now when do step 5 to 7 again and everything should work
 9. If you don't get in to any errors after you have run the update command it should look something like this
 
 10. As you can see now we need to reboot the host, we can do that by typing following command
