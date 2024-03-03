@@ -85,7 +85,7 @@ Now when we have downloaded latest ESXi let's get started.
   <img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi.png" alt="" class="wp-image-304" />
   </figure>
   <!-- /wp:image -->
-6. What we want is the update with both patch and security updates so we will go for **ESXi-8.0U2b-23305546-standard**
+6. What we want is the update with both patch and security updates so we will choose **ESXi-8.0U2b-23305546-standard**
 7. Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=  
   <!-- wp:enlighter/codeblock {"language":"shell"} -->
   <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -98,3 +98,17 @@ Now when we have downloaded latest ESXi let's get started.
   <img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi.png" alt="" class="wp-image-305" />
   </figure>
   <!-- /wp:image -->
+8. If you did get in to any errors you can fix it by following this steps
+  1. First we will try to activate cache on our host
+  2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
+    <!-- wp:image {"lightbox":{"enabled":true},"id":305,"sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image size-full">
+    <img src="https://stolpe.io/wp-content/uploads/2024/03/07_update_esxi_webgui.png" alt="" class="wp-image-305" />
+    </figure>
+    <!-- /wp:image -->
+  3. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
+    <!-- wp:image {"lightbox":{"enabled":true},"id":305,"sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image size-full">
+    <img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui.png" alt="" class="wp-image-305" />
+    </figure>
+    <!-- /wp:image -->
