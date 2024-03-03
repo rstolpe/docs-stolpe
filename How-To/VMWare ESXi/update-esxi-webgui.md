@@ -112,7 +112,7 @@ Now when we have downloaded latest ESXi let's get started.
     <img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui.png" alt="" class="wp-image-305" />
     </figure>
     <!-- /wp:image -->
-  4. Now do step 5 to 7 again, if your still geting errors do the following steps
+  4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
   5. fff
   6. fff
-  7. fff
+  7. Now when do step 5 to 7 again and everything should work
