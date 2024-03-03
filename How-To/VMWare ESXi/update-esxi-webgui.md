@@ -101,18 +101,15 @@ Now when we have downloaded latest ESXi let's get started.
 8. If you did get in to any errors you can fix it by following this steps
   1. First we will try to activate cache on our host
   2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
-    <!-- wp:image {"lightbox":{"enabled":true},"id":305,"sizeSlug":"full","linkDestination":"none"} -->
-    <figure class="wp-block-image size-full">
-    <img src="https://stolpe.io/wp-content/uploads/2024/03/07_update_esxi_webgui.png" alt="" class="wp-image-305" />
-    </figure>
-    <!-- /wp:image -->
+    
   3. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
-    <!-- wp:image {"lightbox":{"enabled":true},"id":305,"sizeSlug":"full","linkDestination":"none"} -->
-    <figure class="wp-block-image size-full">
-    <img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui.png" alt="" class="wp-image-305" />
-    </figure>
-    <!-- /wp:image -->
+    
   4. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
   5. fff
   6. fff
   7. Now when do step 5 to 7 again and everything should work
+9. If you don't get in to any errors after you have run the update command it should look something like this
+
+10. As you can see now we need to reboot the host, we can do that by typing following command
+    
+11. Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode
