@@ -98,7 +98,7 @@ Now when we have downloaded latest ESXi let's get started.
   <img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi.png" alt="" class="wp-image-305" />
   </figure>
   <!-- /wp:image -->
-8. If you did get in to any errors you can fix it by following this steps
+8. If you did get in to any errors you can fix it by following this steps, if not go to step 9
   1. First we will try to activate cache on our host
   2. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
     
