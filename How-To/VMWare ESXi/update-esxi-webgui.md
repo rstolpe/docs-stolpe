@@ -20,7 +20,7 @@ taxonomy:
 
 If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
 Guide how to this with SSH are coming soon.  
-We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.
+We need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
