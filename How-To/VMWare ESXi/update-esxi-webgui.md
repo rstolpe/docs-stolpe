@@ -4,7 +4,6 @@ title: Update VMWare ESXi on singel host (WebGUI)
 menu_order: 1
 post_status: draft
 post_excerpt: How to update VMWare ESXi on single host with the WebUI
-featured_image: _images/logo/esxi.jpg
 comment_status: open
 taxonomy:
     category:
@@ -19,6 +18,12 @@ taxonomy:
 
 
 <p style="text-align: center;font-size: 0.5em">[giw_edit_link]</p>
+
+<!-- wp:image {"align":"center","id":337,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-full">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/esxi.jpg" alt="" class="wp-image-337"/>
+</figure>
+<!-- /wp:image -->
 
 <span style="font-size:0.8em;">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.</span>
 
