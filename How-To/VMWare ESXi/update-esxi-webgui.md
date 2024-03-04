@@ -16,6 +16,8 @@ taxonomy:
 ---
 
 
+<p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
+
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.<br>
 Guide how to this with SSH are coming soon.<br>
@@ -23,9 +25,7 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium">
-<img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/>
-</figure>
+<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
@@ -37,24 +37,19 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 <!-- /wp:heading -->
 
 <!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size">
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li>
-Click <strong>Host</strong> in the left menu <strong>-> Actions</strong> on the right <strong>-></strong> Click on <strong>Enter maintenance</strong> mode in the dropdown
+<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
+<li class="has-medium-font-size">
+Click <strong>Host</strong> in the left menu <strong>-&gt; Actions</strong> on the right <strong>-&gt;</strong> Click on <strong>Enter maintenance</strong> mode in the dropdown
 </li>
-<!-- /wp:list-item -->
-</ul>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":293,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large">
-<img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi_webgui-1024x433.png" alt="" class="wp-image-293"/>
-</figure>
+<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi_webgui-1024x433.png" alt="" class="wp-image-293"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size">
-<!-- wp:list-item {"fontSize":"medium"} -->
+<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
 <li class="has-medium-font-size">
 <span style="font-size: revert;">Then just confirm that you want to put the host in to maintenance mode</span>
 </li>
@@ -62,25 +57,19 @@ Click <strong>Host</strong> in the left menu <strong>-> Actions</strong> on the 
 <!-- /wp:list -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":294,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium">
-<img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui-300x151.png" alt="" class="wp-image-294"/>
-</figure>
+<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui-300x151.png" alt="" class="wp-image-294"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size">
-<!-- wp:list-item {"fontSize":"medium"} -->
+<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
 <li class="has-medium-font-size">
 <span style="font-size: revert;">You can now see that the host is in maintenance mode</span>
 </li>
-<!-- /wp:list-item -->
-</ul>
+<!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":299,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large">
-<img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/>
-</figure>
+<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"medium"} -->
@@ -93,7 +82,7 @@ Click <strong>Host</strong> in the left menu <strong>-> Actions</strong> on the 
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">In the left menu click on <strong>Storage -> datastore1</strong> <em>(your datastore might be named differently)</em> <strong>-> Datastore browser</strong></li>
+<li class="has-medium-font-size">In the left menu click on <strong>Storage -&gt; datastore1</strong> <em>(your datastore might be named differently)</em> <strong>-&gt; Datastore browser</strong></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -125,7 +114,7 @@ Click <strong>Host</strong> in the left menu <strong>-> Actions</strong> on the 
 
 <!-- wp:list -->
 <ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Click on </span><strong style="font-size: revert;">Host</strong><span style="font-size: revert;"> in the left menu </span><strong style="font-size: revert;">-></strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Actions</strong><span style="font-size: revert;"> at the right </span><strong style="font-size: revert;">-></strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Services</strong><span style="font-size: revert;"> in the dropdown </span><strong style="font-size: revert;">-></strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Enable Secure Shell SSH</strong></li>
+<li class="has-medium-font-size"><span style="font-size: revert;">Click on </span><strong style="font-size: revert;">Host</strong><span style="font-size: revert;"> in the left menu </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Actions</strong><span style="font-size: revert;"> at the right </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Services</strong><span style="font-size: revert;"> in the dropdown </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Enable Secure Shell SSH</strong></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -239,14 +228,18 @@ ls
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<ul class="has-medium-font-size"><!-- wp:list-item -->
+<ul class="has-medium-font-size">
+
+<!-- wp:list-item -->
 <li>Now, try to run the update commands once again</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
 <li>If you don't get in to any errors after you have run the update command it should look something like this
 </li>
-<!-- /wp:list-item --></ul>
+<!-- /wp:list-item -->
+
+</ul>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":311,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi-1024x658.png" alt="" class="wp-image-311"/></figure>
@@ -269,7 +262,7 @@ ls
 
 <!-- wp:list -->
 <ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on </span><strong style="font-size: revert;">host</strong><span style="font-size: revert;"> in left menu </span><strong style="font-size: revert;">-> Actions</strong><span style="font-size: revert;"> to the right and then </span><strong style="font-size: revert;">Exit maintenance mode</strong><span style="font-size: revert;"> in the dropdown menu.</span></li>
+<li class="has-medium-font-size"><span style="font-size: revert;">Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on </span><strong style="font-size: revert;">host</strong><span style="font-size: revert;"> in left menu </span><strong style="font-size: revert;">-&gt; Actions</strong><span style="font-size: revert;"> to the right and then </span><strong style="font-size: revert;">Exit maintenance mode</strong><span style="font-size: revert;"> in the dropdown menu.</span></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
