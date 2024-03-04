@@ -35,7 +35,7 @@ Now when we have downloaded latest ESXi let's get started.
 </p>
 
 <p class="has-medium-font-size">
-## Set host in maintenance mode
+### Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
 </p>
 
