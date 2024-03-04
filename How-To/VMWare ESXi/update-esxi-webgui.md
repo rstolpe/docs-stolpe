@@ -55,22 +55,14 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">Upload <span style="font-size: revert;">VMWare ESXi offline bundle</span></h2>
-<!-- /wp:heading -->
-
-<!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">We also need to upload the VMWare ESXi offline bundle file that we did download earlier.</span></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">In the left menu click on <strong>Storage -&gt; datastore1</strong> <em>(your datastore might be named differently)</em> <strong>-&gt; Datastore browser</strong></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+### Upload VMWare ESXi offline bundle
+Now it's time to upload VMWare ESXi offline bundle file that you did download earlier
+* In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":301,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi_webgui-300x189.png" alt="" class="wp-image-301"/></figure>
+<figure class="wp-block-image size-medium">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi_webgui-300x189.png" alt="" class="wp-image-301"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:list -->
