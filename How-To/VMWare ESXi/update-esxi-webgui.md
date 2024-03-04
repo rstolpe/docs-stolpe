@@ -18,9 +18,11 @@ taxonomy:
 
 <p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
 
-<p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
+<p class="has-medium-font-size">
+If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
 Guide how to this with SSH are coming soon.  
-We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.</p>
+We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
@@ -28,7 +30,9 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 </figure>
 <!-- /wp:image -->
 
+<p class="has-medium-font-size">
 Now when we have downloaded latest ESXi let's get started.
+</p>
 
 ## Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
