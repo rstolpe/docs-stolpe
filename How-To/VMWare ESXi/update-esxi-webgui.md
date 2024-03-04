@@ -102,10 +102,18 @@ Now when we have downloaded latest ESXi let's get started.
 14. If you did get in to any errors you can fix it by following this steps, if not go to step 9
 15. First we will try to activate cache on our host
 16. Click on **Host** in left menu **->** **System** **->** **Swap** **->** **Edit settings**
-  ![07](/_images/how-to/vmware-esxi/update-esxi/07_update_esxi_webgui.png)
+  <!-- wp:image {"lightbox":{"enabled":true},"id":312,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full">
+  <img src="https://stolpe.io/wp-content/uploads/2024/03/07_update_esxi_webgui.png" alt="" class="wp-image-312" />
+  </figure>
+  <!-- /wp:image -->
 
 17. Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
-  ![08](/_images/how-to/vmware-esxi/update-esxi/08_update_esxi_webgui.png)
+  <!-- wp:image {"lightbox":{"enabled":true},"id":313,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full">
+  <img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui.png" alt="" class="wp-image-313" />
+  </figure>
+  <!-- /wp:image -->
     
 18. Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps
 19. Now we will delete all files and folders in /tmp
@@ -126,7 +134,11 @@ Now when we have downloaded latest ESXi let's get started.
   <!-- /wp:enlighter/codeblock -->
 21. Now do step 5 to 7 again and everything should work
 22. If you don't get in to any errors after you have run the update command it should look something like this
-  ![09](/_images/how-to/vmware-esxi/update-esxi/04_update_esxi.png)
+  <!-- wp:image {"lightbox":{"enabled":true},"id":311,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full">
+  <img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi.png" alt="" class="wp-image-311" />
+  </figure>
+  <!-- /wp:image -->
 
 23. As you can see now we need to reboot the host, we can do that by typing following command
   <!-- wp:enlighter/codeblock {"language":"shell"} -->
@@ -136,4 +148,8 @@ Now when we have downloaded latest ESXi let's get started.
   <!-- /wp:enlighter/codeblock -->
     
 24. Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on **host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
-  ![09](/_images/how-to/vmware-esxi/update-esxi/09_update_esxi_webgui.png)
+  <!-- wp:image {"lightbox":{"enabled":true},"id":325,"sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full">
+  <img src="https://stolpe.io/wp-content/uploads/2024/03/09_update_esxi_webgui.png" alt="" class="wp-image-325" />
+  </figure>
+  <!-- /wp:image -->
