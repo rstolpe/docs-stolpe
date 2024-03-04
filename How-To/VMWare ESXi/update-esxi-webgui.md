@@ -46,13 +46,15 @@ Now when we have downloaded latest ESXi let's get started.
 <!-- /wp:list -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":294,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui-300x151.png" alt="" class="wp-image-294"/></figure>
+<figure class="wp-block-image size-medium">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi_webgui-300x151.png" alt="" class="wp-image-294"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:list {"fontSize":"medium"} -->
 <ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
 <li class="has-medium-font-size">
-<span style="font-size: revert;">You can now see that the host is in maintenance mode</span>
+<span>You can now see that the host is in maintenance mode</span>
 </li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
