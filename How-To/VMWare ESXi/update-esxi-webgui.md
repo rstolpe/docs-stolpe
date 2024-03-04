@@ -17,7 +17,8 @@ taxonomy:
 
 # Update VMWare ESXi on singel host (WebGUI)
 If your running VMWare ESXi on a singel host you can't update trough vSphere so you need to do it by your self. Below I'll go trough how you update VMWare
-ESXi with the WebGUI.
+ESXi with the WebGUI.  
+Guide how to to this with SSH are coming soon.
   
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from [here](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"full","linkDestination":"none"} -->
@@ -123,9 +124,16 @@ Now when we have downloaded latest ESXi let's get started.
       ls
       </pre>
       <!-- /wp:enlighter/codeblock -->
-    3. Now when do step 5 to 7 again and everything should work
+    3. Now do step 5 to 7 again and everything should work
 9. If you don't get in to any errors after you have run the update command it should look something like this
+  ![09](/_images/how-to/vmware-esxi/update-esxi/04_update_esxi.png)
 
 10. As you can see now we need to reboot the host, we can do that by typing following command
+      <!-- wp:enlighter/codeblock {"language":"shell"} -->
+      <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+      esxcli system shutdown reboot --reason "Updated ESXi"
+      </pre>
+      <!-- /wp:enlighter/codeblock -->
     
-11. Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode
+11. Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on **host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
+  ![09](/_images/how-to/vmware-esxi/update-esxi/09_update_esxi_webgui.png)
