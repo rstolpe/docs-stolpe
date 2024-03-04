@@ -60,7 +60,9 @@ Now when we have downloaded latest ESXi let's get started.
 </p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":299,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"medium"} -->
