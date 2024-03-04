@@ -18,8 +18,17 @@ taxonomy:
 
 <p style="text-align: center;font-size: 0.6em">[giw_edit_link]</p>
 
-If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
+If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.  
 
+# Table of Contents
+1. [Download VMWare ESXi offline bundle](#download-vmware-esxi-offline-bundle)
+2. [Set host in maintenance mode](#set-host-in-maintenance-mode)
+3. [Upload VMWare ESXi offline bundle](#upload-offline-bundle)
+4. [Execute update command](#execute-update-command)
+5. [If you get in to any errors](#if-you-get-in-to-any-errors)
+6. [Exit maintenance mode](exit-maintenance-mode)
+
+### [Download VMWare ESXi offline bundle](#download-vmware-esxi-offline-bundle)
 First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
