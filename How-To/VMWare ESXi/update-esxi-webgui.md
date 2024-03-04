@@ -35,7 +35,7 @@ Now when we have downloaded latest ESXi let's get started.
 </p>
 
 <p class="has-medium-font-size">
-## Set host in maintenance mode
+### Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
 </p>
 
@@ -45,13 +45,9 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">
-<span style="font-size: revert;">Then just confirm that you want to put the host in to maintenance mode</span>
-</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p class="has-medium-font-size">
+* You will get a pop-up where you need to confirm that you actually want to put the host in maintenance mode, click **Yes**
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":294,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
@@ -59,16 +55,14 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">
-<span>You can now see that the host is in maintenance mode</span>
-</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p class="has-medium-font-size">
+* Now we can see that the host have entered maintenance mode
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":299,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"fontSize":"medium"} -->
