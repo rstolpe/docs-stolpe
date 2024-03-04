@@ -16,7 +16,7 @@ taxonomy:
 ---
 
 
-<p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
+<p style="text-align: center;font-size: 0.6em">[giw_edit_link]</p>
 
 If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
 
