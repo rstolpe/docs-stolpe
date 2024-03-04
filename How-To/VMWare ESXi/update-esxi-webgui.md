@@ -16,10 +16,19 @@ taxonomy:
 ---
 
 
-<p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
+<p style="text-align: center;font-size: 0.6em">[giw_edit_link]</p>
 
-If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
+If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.  
 
+# Table of Contents
+1. [Download VMWare ESXi offline bundle](#download-vmware-esxi-offline-bundle)
+2. [Set host in maintenance mode](#set-host-in-maintenance-mode)
+3. [Upload VMWare ESXi offline bundle](#upload-offline-bundle)
+4. [Execute update command](#execute-update-command)
+5. [If you get in to any errors](#if-you-get-in-to-any-errors)
+6. [Exit maintenance mode](exit-maintenance-mode)
+
+### [Download VMWare ESXi offline bundle](#download-vmware-esxi-offline-bundle)
 First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
@@ -28,7 +37,7 @@ First you need to download the latest [VMWare ESXi offline bundle file](https://
 <!-- /wp:image -->
 Now when you have downloaded latest ESXi let's get started.
 
-### Set host in maintenance mode
+### [Set host in maintenance mode](#set-host-in-maintenance-mode)
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":293,"sizeSlug":"large","linkDestination":"none"} -->
@@ -53,7 +62,7 @@ Now when you have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-### Upload VMWare ESXi offline bundle
+### [Upload VMWare ESXi offline bundle](#upload-offline-bundle)
 Now it's time to upload VMWare ESXi offline bundle file that you did download earlier
 * In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**
 
@@ -77,7 +86,7 @@ Now it's time to upload VMWare ESXi offline bundle file that you did download ea
 </figure>
 <!-- /wp:image -->
 
-### Execute update command
+### [Execute update command](#execute-update-command)
 Now it's time to start the update, as far as I know you need to do this through SSH.  
 So you need to enable SSH on the host.
 
@@ -121,7 +130,7 @@ esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ES
 
 * If you did get in to any errors you can fix it by following the steps below, if you did not get any errors you can skip the step below and go to "Exit maintenance mode"
 
-### If you get in to any errors
+### [If you get in to any errors](#if-you-get-in-to-any-errors)
 Sometime it happens that you will run in to errors so I'll go through the usual fixes below.
 
 * First step is to make sure that cache are activated
@@ -182,7 +191,7 @@ esxcli system shutdown reboot --reason "Updated ESXi"
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-### Exit maintenance mode
+### [Exit maintenance mode](exit-maintenance-mode)
 Now when the host has rebooted you need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":325,"sizeSlug":"large","linkDestination":"none"} -->
