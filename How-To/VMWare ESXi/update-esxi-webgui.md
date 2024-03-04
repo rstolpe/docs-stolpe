@@ -20,7 +20,7 @@ taxonomy:
 
 If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
 Guide how to this with SSH are coming soon.  
-We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.
+We need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
@@ -136,39 +136,31 @@ Sometime it happens that you will run in to errors so I'll go through the usual 
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Make sure that everything looks like the picture below </span><em style="font-size: revert;">(Datastore1 might be named differently on your host)</em> </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Make sure that everything looks like the picture below _(Datastore1 might be named differently on your host)_
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":313,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui-300x174.png" alt="" class="wp-image-313"/></figure>
+<figure class="wp-block-image size-medium">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/08_update_esxi_webgui-300x174.png" alt="" class="wp-image-313"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now do step 5 to 7 again, if your still geting errors we need to delete everything in the /tmp folder, do the following steps</span> </li>
-<!-- /wp:list-item -->
+* Now do the steps in "Execute update command" again
 
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now we will delete all files and folders in /tmp</span> </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+If your still geting errors we need to delete everything in the /tmp folder, follow the steps below.
+
+* Now we will delete all files and folders in /tmp, you can do that with the command below
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">rm -rf /tmp/*
+<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+rm -rf /tmp/*
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">You can verify that the /tmp folder is empty by executing the following commands</span> </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* You can verify that the /tmp folder is empty by executing the following commands
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""># Change to the /tmp folder
+<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+# Change to the /tmp folder
 cd /tmp
 
 # Display all content inside the /tmp folder
@@ -176,44 +168,30 @@ ls
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<ul class="has-medium-font-size">
-
-<!-- wp:list-item -->
-<li>Now, try to run the update commands once again</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>If you don't get in to any errors after you have run the update command it should look something like this
-</li>
-<!-- /wp:list-item -->
-
-</ul>
+* Now, try to run the update commands once again from "Execute update command"
+* If you don't get in to any errors after you have run the update command it should look something like this
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":311,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi-1024x658.png" alt="" class="wp-image-311"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi-1024x658.png" alt="" class="wp-image-311"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">As you can see now we need to reboot the host, we can do that by typing following command</span></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Now it's time to reboot the host
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">esxcli system shutdown reboot --reason "Updated ESXi"
+<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+esxcli system shutdown reboot --reason "Updated ESXi"
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">Exit maintenance mode</h2>
-<!-- /wp:heading -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on </span><strong style="font-size: revert;">host</strong><span style="font-size: revert;"> in left menu </span><strong style="font-size: revert;">-&gt; Actions</strong><span style="font-size: revert;"> to the right and then </span><strong style="font-size: revert;">Exit maintenance mode</strong><span style="font-size: revert;"> in the dropdown menu.</span></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+### Exit maintenance mode
+Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":325,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/09_update_esxi_webgui-1024x385.png" alt="" class="wp-image-325"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/09_update_esxi_webgui-1024x385.png" alt="" class="wp-image-325"/>
+</figure>
 <!-- /wp:image -->
+
+Now we are finished!
