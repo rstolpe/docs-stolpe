@@ -46,7 +46,7 @@ Now when we have downloaded latest ESXi let's get started.
 <!-- /wp:image -->
 
 <p class="has-medium-font-size">
-* Now we just need to confirm that the host are in maintenance mode
+* You will get a pop-up where you need to confirm that you actually want to put the host in maintenance mode, click **Yes**
 </p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":294,"sizeSlug":"medium","linkDestination":"none"} -->
@@ -55,13 +55,9 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">
-<span>You can now see that the host is in maintenance mode</span>
-</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p class="has-medium-font-size">
+* Now we can see that the host have entered maintenance mode
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":299,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi_webgui-1024x316.png" alt="" class="wp-image-299"/></figure>
