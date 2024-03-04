@@ -2,7 +2,7 @@
 
 title: Update VMWare ESXi on singel host (WebGUI)
 menu_order: 1
-post_status: draft
+post_status: publish
 post_excerpt: How to update VMWare ESXi on single host with the WebUI
 comment_status: open
 taxonomy:
