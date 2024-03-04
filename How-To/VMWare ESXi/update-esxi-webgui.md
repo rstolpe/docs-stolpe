@@ -96,7 +96,7 @@ So you need to enable SSH on the host.</span>
 </figure>
 <!-- /wp:image -->
 
-* <span style="font-size:0.8em;">Now you need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download <a style="font-size: revert;" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a></span>
+* <span style="font-size:0.8em;">Now you need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 * <span style="font-size:0.8em;">Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after `--depot=` to your own path.</span>
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
