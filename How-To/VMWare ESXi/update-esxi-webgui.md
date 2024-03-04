@@ -20,7 +20,7 @@ taxonomy:
 
 <span style="font-size:0.8em;">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.</span>
 
-### Download VMWare ESXi offline bundle
+## Download VMWare ESXi offline bundle
 <span style="font-size:0.8em;">First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
@@ -31,7 +31,7 @@ taxonomy:
 
 <span style="font-size:0.8em;">Now when you have downloaded latest ESXi let's get started.</span>
 
-### Set host in maintenance mode
+## Set host in maintenance mode
 * <span style="font-size:0.8em;">Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":293,"sizeSlug":"large","linkDestination":"none"} -->
@@ -57,8 +57,8 @@ taxonomy:
 <!-- /wp:image -->
 
 ## Upload VMWare ESXi offline bundle
-<span style="font-size:0.8em;">Now it's time to upload VMWare ESXi offline bundle file that you did download earlier</span>
-* <span style="font-size:0.8em;">In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**</span>
+<span style="font-size:0.8em;">Now it's time to upload VMWare ESXi offline bundle file that you did download earlier
+* In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":301,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
