@@ -34,8 +34,10 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 Now when we have downloaded latest ESXi let's get started.
 </p>
 
+<p class="has-medium-font-size">
 ## Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":293,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi_webgui-1024x433.png" alt="" class="wp-image-293"/></figure>
