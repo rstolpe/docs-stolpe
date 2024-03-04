@@ -60,11 +60,11 @@ Now when you have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-### Upload VMWare ESXi offline bundle
+## Upload VMWare ESXi offline bundle
 <span style="font-size:0.8em;">
 Now it's time to upload VMWare ESXi offline bundle file that you did download earlier
-* In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**
 </span>
+* <span style="font-size:0.8em;">In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":301,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
@@ -86,13 +86,13 @@ Now it's time to upload VMWare ESXi offline bundle file that you did download ea
 </figure>
 <!-- /wp:image -->
 
-### Execute update command
+## Execute update command
 <span style="font-size:0.8em;">
 Now it's time to start the update, as far as I know you need to do this through SSH.<br>
 So you need to enable SSH on the host.
-
-* Click on **Host** in the left menu **-> Actions** at the right **-> Services** in the dropdown **-> Enable Secure Shell SSH**
 </span>
+
+* <span style="font-size:0.8em;">Click on **Host** in the left menu **-> Actions** at the right **-> Services** in the dropdown **-> Enable Secure Shell SSH**</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":300,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -100,10 +100,8 @@ So you need to enable SSH on the host.
 </figure>
 <!-- /wp:image -->
 
-<span style="font-size:0.8em;">
-* Now you need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-* Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after `--depot=` to your own path
-</span>
+* <span style="font-size:0.8em;">Now you need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)</span>
+* <span style="font-size:0.8em;">Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after `--depot=` to your own path</span>
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
 <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -117,10 +115,8 @@ esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMw
 </figure>
 <!-- /wp:image -->
 
-<span style="font-size:0.8em;">
-* What you want is the update with both patch and security updates, choose **ESXi-8.0U2b-23305546-standard**
-* Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after `--depot=`
-</span>
+* <span style="font-size:0.8em;">What you want is the update with both patch and security updates, choose **ESXi-8.0U2b-23305546-standard**</span>
+* <span style="font-size:0.8em;">Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after `--depot=`</span>
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
 <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -136,13 +132,13 @@ esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ES
 
 * <span style="font-size:0.8em;">If you did get in to any errors you can fix it by following the steps below, if you did not get any errors you can skip the step below and go to "Exit maintenance mode"</span>
 
-### If you get in to any errors
+## If you get in to any errors
 <span style="font-size:0.8em;">
 Sometime it happens that you will run in to errors so I'll go through the usual fixes below.
-
-* First step is to make sure that cache are activated
-* Click on **Host** in left menu **-> System -> Swap Edit settings**
 </span>
+
+* <span style="font-size:0.8em;">First step is to make sure that cache are activated</span>
+* <span style="font-size:0.8em;">Click on **Host** in left menu **-> System -> Swap Edit settings**</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":312,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -158,13 +154,11 @@ Sometime it happens that you will run in to errors so I'll go through the usual 
 </figure>
 <!-- /wp:image -->
 
+* <span style="font-size:0.8em;">Now do the steps in "Execute update command" again</span>
 <span style="font-size:0.8em;">
-* Now do the steps in "Execute update command" again
-
 If you still geting errors you need to delete everything in the /tmp folder, follow the steps below.
-
-* To delete everything in /tmp type the following command
 </span>
+* <span style="font-size:0.8em;">To delete everything in /tmp type the following command</span>
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
 <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -184,10 +178,8 @@ ls
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<span style="font-size:0.8em;">
-* Now, try to run the update commands once again from "Execute update command"
-* If you don't get in to any errors after you have run the update command it should look something like this
-</span>
+* <span style="font-size:0.8em;">Now, try to run the update commands once again from "Execute update command"</span>
+* <span style="font-size:0.8em;">If you don't get in to any errors after you have run the update command it should look something like this</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":311,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -203,7 +195,7 @@ esxcli system shutdown reboot --reason "Updated ESXi"
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-### Exit maintenance mode
+## Exit maintenance mode
 <span style="font-size:0.8em;">
 Now when the host has rebooted you need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
 </span>
