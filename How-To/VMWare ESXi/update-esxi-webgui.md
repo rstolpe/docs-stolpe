@@ -45,13 +45,9 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list {"fontSize":"medium"} -->
-<ul class="has-medium-font-size"><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">
-<span style="font-size: revert;">Then just confirm that you want to put the host in to maintenance mode</span>
-</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<p class="has-medium-font-size">
+* Now we just need to confirm that the host are in maintenance mode
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":294,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
