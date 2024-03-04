@@ -15,9 +15,6 @@ taxonomy:
         - VMWare
 ---
 
-<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size">[giw_edit_link]</p>
-<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.<br>
@@ -26,7 +23,9 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/></figure>
+<figure class="wp-block-image size-medium">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
