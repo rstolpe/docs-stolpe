@@ -18,7 +18,7 @@ taxonomy:
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.<br>
-Guide how to this with SSH are coming soon.<br><br>
+Guide how to this with SSH are coming soon.<br>
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.</p>
 <!-- /wp:paragraph -->
 
@@ -39,8 +39,8 @@ We need to download the latest VMWare ESXi offline bundle file, and you can do i
 <!-- wp:list {"fontSize":"medium"} -->
 <ul class="has-medium-font-size">
 <!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size">
-<span style="font-size: revert;">Click </span><strong style="font-size: revert;">Host</strong><span style="font-size: revert;"> in the left menu </span><strong style="font-size: revert;">-></strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Actions</strong><span style="font-size: revert;"> on the right </span><strong style="font-size: revert;">-></strong><span style="font-size: revert;"> Click on </span><strong style="font-size: revert;">Enter maintenance</strong><span style="font-size: revert;"> mode in the dropdown</span>
+<li>
+Click <strong>Host</strong> in the left menu <strong>-> Actions</strong> on the right <strong>-></strong> Click on <strong>Enter maintenance</strong> mode in the dropdown
 </li>
 <!-- /wp:list-item -->
 </ul>
@@ -239,14 +239,14 @@ ls
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
-<ul>
-<li>
-<p>Now, try to run the update commands once again</p>
+<ul class="has-medium-font-size"><!-- wp:list-item -->
+<li>Now, try to run the update commands once again</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>If you don't get in to any errors after you have run the update command it should look something like this
 </li>
-<li>
-<p>If you don't get in to any errors after you have run the update command it should look something like this</p>
-</li>
-</ul>
+<!-- /wp:list-item --></ul>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":311,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/04_update_esxi-1024x658.png" alt="" class="wp-image-311"/></figure>
