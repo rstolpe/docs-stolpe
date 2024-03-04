@@ -19,16 +19,14 @@ taxonomy:
 <p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
 
 If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
-Guide how to this with SSH are coming soon.  
-We need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 
+First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
 <img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/>
 </figure>
 <!-- /wp:image -->
-
-Now when we have downloaded latest ESXi let's get started.
+Now when you have downloaded latest ESXi let's get started.
 
 ### Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
@@ -47,7 +45,7 @@ Now when we have downloaded latest ESXi let's get started.
 </figure>
 <!-- /wp:image -->
 
-* Now we can see that the host have entered maintenance mode
+* Now you can see that the host have entered maintenance mode
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":299,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -91,7 +89,7 @@ So you need to enable SSH on the host.
 </figure>
 <!-- /wp:image -->
 
-* Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download </span><a style="font-size: revert;" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a>
+* Now you need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download </span><a style="font-size: revert;" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a>
 * Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after `--depot=` to your own path.
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
@@ -106,8 +104,7 @@ esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMw
 </figure>
 <!-- /wp:image -->
 
-* What we want is the update with both patch and security updates so we will choose **ESXi-8.0U2b-23305546-standard**
-
+* What you want is the update with both patch and security updates, choose **ESXi-8.0U2b-23305546-standard**
 * Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after `--depot=`
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
@@ -127,7 +124,7 @@ esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ES
 ### If you get in to any errors
 Sometime it happens that you will run in to errors so I'll go through the usual fixes below.
 
-* First we will try to activate cache on our host
+* First step is to make sure that cache are activated
 * Click on **Host** in left menu **-> System -> Swap Edit settings**
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":312,"sizeSlug":"large","linkDestination":"none"} -->
@@ -146,9 +143,9 @@ Sometime it happens that you will run in to errors so I'll go through the usual 
 
 * Now do the steps in "Execute update command" again
 
-If your still geting errors we need to delete everything in the /tmp folder, follow the steps below.
+If you still geting errors you need to delete everything in the /tmp folder, follow the steps below.
 
-* Now we will delete all files and folders in /tmp, you can do that with the command below
+* To delete everything in /tmp type the following command
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
 <pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
@@ -186,7 +183,7 @@ esxcli system shutdown reboot --reason "Updated ESXi"
 <!-- /wp:enlighter/codeblock -->
 
 ### Exit maintenance mode
-Now when the host has rebooted we need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
+Now when the host has rebooted you need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":325,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -194,4 +191,4 @@ Now when the host has rebooted we need to exit maintenance mode if it still are 
 </figure>
 <!-- /wp:image -->
 
-Now we are finished!
+Now everything is finished and you ESXi host should be updated.
