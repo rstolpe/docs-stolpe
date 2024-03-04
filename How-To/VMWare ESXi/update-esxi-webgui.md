@@ -1,8 +1,23 @@
+---
+
+title: Update VMWare ESXi on singel host (WebGUI)
+menu_order: 1
+post_status: draft
+comment_status: open
+taxonomy:
+    category:
+        - how-to
+        - vmware-esxi-how-to
+
+    post_tag:
+        - ESXi
+        - VMWare ESXi
+        - VMWare
+---
+
 <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
 <p class="has-text-align-center has-small-font-size">[giw_edit_link]</p>
 <!-- /wp:paragraph -->
-
-# Update VMWare ESXi on singel host (SSH)
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.<br>
