@@ -18,17 +18,21 @@ taxonomy:
 
 <p style="text-align: center;font-size: 0.7em">[giw_edit_link]</p>
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.<br>
-Guide how to this with SSH are coming soon.<br>
-We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.</p>
-<!-- /wp:paragraph -->
+<p class="has-medium-font-size">
+If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self. Below I'll go through how you update VMWare ESXi with the WebGUI.  
+Guide how to this with SSH are coming soon.  
+We need to download the latest VMWare ESXi offline bundle file, and you can do it from <a href="https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&amp;productId=1345">here</a>.
+</p>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
-<figure class="wp-block-image size-medium"><img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/></figure>
+<figure class="wp-block-image size-medium">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/>
+</figure>
 <!-- /wp:image -->
 
+<p class="has-medium-font-size">
 Now when we have downloaded latest ESXi let's get started.
+</p>
 
 ## Set host in maintenance mode
 * Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown
