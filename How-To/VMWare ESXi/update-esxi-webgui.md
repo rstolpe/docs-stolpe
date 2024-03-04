@@ -18,22 +18,18 @@ taxonomy:
 
 <p style="text-align: center;font-size: 0.5em">[giw_edit_link]</p>
 
-<span style="font-size:0.8em;">
-If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.
-</span>
+<span style="font-size:0.8em;">If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.</span>
 
 ### Download VMWare ESXi offline bundle
-<span style="font-size:0.8em;">
-First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
-</span>
+<span style="font-size:0.8em;">First you need to download the latest [VMWare ESXi offline bundle file](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).</span>
+
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"medium","linkDestination":"none"} -->
 <figure class="wp-block-image size-medium">
 <img src="https://stolpe.io/wp-content/uploads/2024/03/01_update_esxi-300x83.png" alt="" class="wp-image-282"/>
 </figure>
 <!-- /wp:image -->
-<span style="font-size:0.8em;">
-Now when you have downloaded latest ESXi let's get started.
-</span>
+
+<span style="font-size:0.8em;">Now when you have downloaded latest ESXi let's get started.</span>
 
 ### Set host in maintenance mode
 * <span style="font-size:0.8em;">Click **Host** in the left menu **-> Actions** on the right **->** Click on **Enter maintenance** mode in the dropdown</span>
@@ -61,9 +57,7 @@ Now when you have downloaded latest ESXi let's get started.
 <!-- /wp:image -->
 
 ## Upload VMWare ESXi offline bundle
-<span style="font-size:0.8em;">
-Now it's time to upload VMWare ESXi offline bundle file that you did download earlier
-</span>
+<span style="font-size:0.8em;">Now it's time to upload VMWare ESXi offline bundle file that you did download earlier</span>
 * <span style="font-size:0.8em;">In the left menu click on **-> datastore1** _(your datastore might be named differently)_ **-> Datastore browser**</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":301,"sizeSlug":"medium","linkDestination":"none"} -->
@@ -87,10 +81,8 @@ Now it's time to upload VMWare ESXi offline bundle file that you did download ea
 <!-- /wp:image -->
 
 ## Execute update command
-<span style="font-size:0.8em;">
-Now it's time to start the update, as far as I know you need to do this through SSH.<br>
-So you need to enable SSH on the host.
-</span>
+<span style="font-size:0.8em;">Now it's time to start the update, as far as I know you need to do this through SSH.
+So you need to enable SSH on the host.</span>
 
 * <span style="font-size:0.8em;">Click on **Host** in the left menu **-> Actions** at the right **-> Services** in the dropdown **-> Enable Secure Shell SSH**</span>
 
@@ -133,9 +125,7 @@ esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ES
 * <span style="font-size:0.8em;">If you did get in to any errors you can fix it by following the steps below, if you did not get any errors you can skip the step below and go to "Exit maintenance mode"</span>
 
 ## If you get in to any errors
-<span style="font-size:0.8em;">
-Sometime it happens that you will run in to errors so I'll go through the usual fixes below.
-</span>
+<span style="font-size:0.8em;">Sometime it happens that you will run in to errors so I'll go through the usual fixes below.</span>
 
 * <span style="font-size:0.8em;">First step is to make sure that cache are activated</span>
 * <span style="font-size:0.8em;">Click on **Host** in left menu **-> System -> Swap Edit settings**</span>
@@ -155,9 +145,7 @@ Sometime it happens that you will run in to errors so I'll go through the usual 
 <!-- /wp:image -->
 
 * <span style="font-size:0.8em;">Now do the steps in "Execute update command" again</span>
-<span style="font-size:0.8em;">
-If you still geting errors you need to delete everything in the /tmp folder, follow the steps below.
-</span>
+<span style="font-size:0.8em;">If you still geting errors you need to delete everything in the /tmp folder, follow the steps below.</span>
 * <span style="font-size:0.8em;">To delete everything in /tmp type the following command</span>
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
@@ -196,9 +184,7 @@ esxcli system shutdown reboot --reason "Updated ESXi"
 <!-- /wp:enlighter/codeblock -->
 
 ## Exit maintenance mode
-<span style="font-size:0.8em;">
-Now when the host has rebooted you need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.
-</span>
+<span style="font-size:0.8em;">Now when the host has rebooted you need to exit maintenance mode if it still are in maintenance mode, do that by click on **Host** in left menu **-> Actions** to the right and then **Exit maintenance mode** in the dropdown menu.</span>
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":325,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large">
@@ -206,6 +192,4 @@ Now when the host has rebooted you need to exit maintenance mode if it still are
 </figure>
 <!-- /wp:image -->
 
-<span style="font-size:0.8em;">
-Now everything is finished and you ESXi host should be updated.
-</span>
+<span style="font-size:0.8em;">Now everything is finished and you ESXi host should be updated.</span>
