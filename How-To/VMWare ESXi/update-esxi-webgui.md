@@ -16,7 +16,7 @@ taxonomy:
 ---
 
 
-<p style="text-align: center;font-size: 0.6em">[giw_edit_link]</p>
+<p style="text-align: center;font-size: 0.5em">[giw_edit_link]</p>
 
 <span style="font-size:0.8em;">
 If you're running VMWare ESXi on a singel host you can't update through vSphere so you need to do it by your self.
