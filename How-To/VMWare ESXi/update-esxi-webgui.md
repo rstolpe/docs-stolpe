@@ -17,7 +17,8 @@ taxonomy:
 
 # Update VMWare ESXi on singel host (WebGUI)
 If your running VMWare ESXi on a singel host you can't update trough vSphere so you need to do it by your self. Below I'll go trough how you update VMWare
-ESXi with the WebGUI.
+ESXi with the WebGUI.  
+Guide how to to this with SSH are coming soon.
   
 We need to download the latest VMWare ESXi offline bundle file, and you can do it from [here](https://customerconnect.vmware.com/downloads/details?downloadGroup=ESXI80U2B&productId=1345).
 <!-- wp:image {"lightbox":{"enabled":true},"id":282,"sizeSlug":"full","linkDestination":"none"} -->
