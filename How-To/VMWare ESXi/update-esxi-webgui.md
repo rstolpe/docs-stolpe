@@ -65,102 +65,75 @@ Now it's time to upload VMWare ESXi offline bundle file that you did download ea
 </figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Click on </span><strong style="font-size: revert;">Upload file</strong><span style="font-size: revert;"> and then select VMWare ESXi offline bundle file that we did download earlier to upload it. If you look at the left side of the window you will see a progress bar.</span> </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Click on **Upload file** and then select VMWare ESXi offline bundle file that you did download earlier to upload it. If you look at the left side of the window you will see a progress bar
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":302,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/05_update_esxi_webgui-1024x422.png" alt="" class="wp-image-302"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/05_update_esxi_webgui-1024x422.png" alt="" class="wp-image-302"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":303,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/06_update_esxi_webgui-1024x74.png" alt="" class="wp-image-303"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/06_update_esxi_webgui-1024x74.png" alt="" class="wp-image-303"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">Execute update command</h2>
-<!-- /wp:heading -->
+### Execute update command
+Now it's time to start the update, as far as I know you need to do this through SSH.  
+So you need to enable SSH on the host.
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><span style="font-size: revert;">As far as I know the last steps we need to do with SSH, but that's easy. So first we need to enable SSH on the host.</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Click on </span><strong style="font-size: revert;">Host</strong><span style="font-size: revert;"> in the left menu </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Actions</strong><span style="font-size: revert;"> at the right </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Services</strong><span style="font-size: revert;"> in the dropdown </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Enable Secure Shell SSH</strong></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Click on **Host** in the left menu **-> Actions** at the right **-> Services** in the dropdown **-> Enable Secure Shell SSH**
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":300,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/00_update_esxi_webgui-1024x433.png" alt="" class="wp-image-300"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/00_update_esxi_webgui-1024x433.png" alt="" class="wp-image-300"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download </span><a style="font-size: revert;" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a> </li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after --depot= to your own path.</span></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Now we need to connect to the host, you can do that with the Terminal in macOS or Linux, for Windows I can recommend you to download </span><a style="font-size: revert;" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a>
+* Let's see what profiles that are located on our update, to do that you can write the following command. Remember to replace path after `--depot=` to your own path.
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip
+<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+esxcli software sources profile list --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":304,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi-1024x125.png" alt="" class="wp-image-304"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/02_update_esxi-1024x125.png" alt="" class="wp-image-304"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">What we want is the update with both patch and security updates so we will choose </span><strong style="font-size: revert;">ESXi-8.0U2b-23305546-standard</strong></li>
-<!-- /wp:list-item -->
+* What we want is the update with both patch and security updates so we will choose **ESXi-8.0U2b-23305546-standard**
 
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after --depot=</span></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* Now it's time to run the update, if you get error in return like me I'll go trough how to solve it below. To start the update execute the following command. And remember to change path to your own after `--depot=`
 
 <!-- wp:enlighter/codeblock {"language":"shell"} -->
-<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip --profile=ESXi-8.0U2b-23305546-standard
+<pre class="EnlighterJSRAW" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">
+esxcli software profile update --depot=/vmfs/volumes/datastore1/Update/VMware-ESXi-8.0U2b-23305546-depot.zip --profile=ESXi-8.0U2b-23305546-standard
 </pre>
 <!-- /wp:enlighter/codeblock -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":305,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi-1024x89.png" alt="" class="wp-image-305"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/03_update_esxi-1024x89.png" alt="" class="wp-image-305"/>
+</figure>
 <!-- /wp:image -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">If you did get in to any errors you can fix it by </span>following the steps below, if you did not get any errors you can skip the step below and go to "Exit <span style="font-size: revert;">maintenance</span> mode"</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* If you did get in to any errors you can fix it by following the steps below, if you did not get any errors you can skip the step below and go to "Exit maintenance mode"
 
-<!-- wp:heading {"fontSize":"medium"} -->
-<h2 class="wp-block-heading has-medium-font-size">If you get in to any errors</h2>
-<!-- /wp:heading -->
+### If you get in to any errors
+Sometime it happens that you will run in to errors so I'll go through the usual fixes below.
 
-<!-- wp:paragraph -->
-<p>Sometime it happens that you will run in to errors so I'll go through the usual fixes below.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">First we will try to activate cache on our host</span></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item {"fontSize":"medium"} -->
-<li class="has-medium-font-size"><span style="font-size: revert;">Click on </span><strong style="font-size: revert;">Host</strong><span style="font-size: revert;"> in left menu </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">System</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Swap</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">-&gt;</strong><span style="font-size: revert;"> </span><strong style="font-size: revert;">Edit settings</strong> </li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+* First we will try to activate cache on our host
+* Click on **Host** in left menu **-> System -> Swap Edit settings**
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":312,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://stolpe.io/wp-content/uploads/2024/03/07_update_esxi_webgui-1024x319.png" alt="" class="wp-image-312"/></figure>
+<figure class="wp-block-image size-large">
+<img src="https://stolpe.io/wp-content/uploads/2024/03/07_update_esxi_webgui-1024x319.png" alt="" class="wp-image-312"/>
+</figure>
 <!-- /wp:image -->
 
 <!-- wp:list -->
